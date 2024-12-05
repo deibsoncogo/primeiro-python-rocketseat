@@ -1,8 +1,15 @@
 # variável utilizando o padrão camelCase
-fullName = "Gabriel"
+fullName = "Gabriel Grande"
 
 # variável utilizando o padrão snake_case
-full_name = "Gabriel"
+full_name = "Gabriel Grande"
+
+# variações da função print
+print("Nome completo:", fullName)
+print("Nome completo: " + fullName)
+print("Nome completo: %s" % (fullName))
+print(f"Nome completo: {fullName}")
+print("Nome completo: {}".format(fullName))
 
 # número inteiro
 numberInt = 25
