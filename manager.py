@@ -1,3 +1,11 @@
+def addTask(tasks, nameTarefa):
+  task = { "name": nameTarefa, "isCompleted": False}
+  tasks.append(task)
+  print(f"Tarefa {nameTarefa} foi adicionada com sucesso")
+  return
+
+tasks = []
+
 while True:
   print("\nMenu do Gerenciador de Lista de Tarefas:")
   print("1. Adicionar tarefas")
@@ -9,7 +17,10 @@ while True:
 
   select = input("\nDigite a sua escolha: ")
 
-  if select == "6":
+  if select == "1":
+    nameTask = input("\nDigite o nome da tarefa que deseja adicionar: ")
+    addTask(tasks, nameTask)
+  elif select == "6":
     break
 
 print("\nPrograma finalizado")
