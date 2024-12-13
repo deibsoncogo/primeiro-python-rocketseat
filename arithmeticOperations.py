@@ -8,6 +8,9 @@ print("5 - 2 =", arithmeticOperations)
 arithmeticOperations = 5 * 2 # multiplicação
 print("5 * 2 =", arithmeticOperations)
 
+arithmeticOperations = 5 ** 2 # multiplicação ao quadrado
+print("5 * 2 =", arithmeticOperations)
+
 arithmeticOperations = 5 / 2 # divisão
 print("5 / 2 =", arithmeticOperations)
 
