@@ -22,6 +22,15 @@ def updateNameTask(tasks, indexTask, newNameTask):
 
   return
 
+def completedTask(tasks, indexTask):
+  if indexTask >= 0 and indexTask < len(tasks):
+    tasks[indexTask - 1]["isCompleted"] = True
+    print(f"\nTarefa {indexTask} completada")
+  else:
+    print("\nÍndice da tarefa inválida")
+
+  return
+
 tasks = []
 
 while True:
@@ -45,6 +54,10 @@ while True:
     indexTask = int(input("\nDigite o número da tarefa que deseja alterar: "))
     nameTask = input("Digite o novo nome da tarefa: ")
     updateNameTask(tasks, indexTask, nameTask)
+  elif select == "4":
+    getTasks(tasks)
+    indexTask = int(input("\nDigite o número da tarefa que deseja completar: "))
+    completedTask(tasks, indexTask)
   elif select == "6":
     break
 
