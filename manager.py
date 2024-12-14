@@ -1,7 +1,7 @@
-def addTask(tasks, nameTarefa):
-  task = { "name": nameTarefa, "isCompleted": False}
+def addTask(tasks, name):
+  task = { "name": name, "isCompleted": False}
   tasks.append(task)
-  print(f"Tarefa {nameTarefa} foi adicionada com sucesso")
+  print(f"Tarefa {name} foi adicionada com sucesso")
   return
 
 def getTasks(tasks):
@@ -13,19 +13,19 @@ def getTasks(tasks):
 
   return
 
-def updateNameTask(tasks, indexTask, newNameTask):
-  if indexTask >= 0 and indexTask < len(tasks):
-    tasks[indexTask - 1]["name"] = newNameTask
-    print(f"\nTarefa {indexTask} atualizada para {newNameTask}")
+def updateNameTask(tasks, index, newName):
+  if index >= 0 and index < len(tasks):
+    tasks[index - 1]["name"] = newName
+    print(f"\nTarefa {index} atualizada para {newName}")
   else:
     print("\nÍndice da tarefa inválida")
 
   return
 
-def completedTask(tasks, indexTask):
-  if indexTask >= 0 and indexTask < len(tasks):
-    tasks[indexTask - 1]["isCompleted"] = True
-    print(f"\nTarefa {indexTask} completada")
+def completeTask(tasks, index):
+  if index >= 0 and index < len(tasks):
+    tasks[index - 1]["isCompleted"] = True
+    print(f"\nTarefa {index} completada")
   else:
     print("\nÍndice da tarefa inválida")
 
@@ -35,7 +35,7 @@ tasks = []
 
 while True:
   print("\nMenu do Gerenciador de Lista de Tarefas:")
-  print("1. Adicionar tarefas")
+  print("1. Adicionar tarefa")
   print("2. Ver tarefas")
   print("3. Atualizar tarefa")
   print("4. Completar tarefa")
@@ -45,19 +45,19 @@ while True:
   select = input("\nDigite a sua escolha: ")
 
   if select == "1":
-    nameTask = input("\nDigite o nome da tarefa que deseja adicionar: ")
-    addTask(tasks, nameTask)
+    name = input("\nDigite o nome da tarefa que deseja adicionar: ")
+    addTask(tasks, name)
   elif select == "2":
     getTasks(tasks)
   elif select == "3":
     getTasks(tasks)
-    indexTask = int(input("\nDigite o número da tarefa que deseja alterar: "))
-    nameTask = input("Digite o novo nome da tarefa: ")
-    updateNameTask(tasks, indexTask, nameTask)
+    index = int(input("\nDigite o número da tarefa que deseja alterar: "))
+    name = input("Digite o novo nome da tarefa: ")
+    updateNameTask(tasks, index, name)
   elif select == "4":
     getTasks(tasks)
-    indexTask = int(input("\nDigite o número da tarefa que deseja completar: "))
-    completedTask(tasks, indexTask)
+    index = int(input("\nDigite o número da tarefa que deseja completar: "))
+    completeTask(tasks, index)
   elif select == "6":
     break
 
