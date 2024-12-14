@@ -1,7 +1,7 @@
 def addTask(tasks, name):
   task = { "name": name, "isCompleted": False}
   tasks.append(task)
-  print(f"Tarefa {name} foi adicionada com sucesso")
+  print(f"\nTarefa foi adicionada com sucesso")
   return
 
 def getTasks(tasks):
@@ -40,7 +40,7 @@ def deleteTaskCompleted(tasks):
     if task["isCompleted"]:
       tasks.remove(task)
 
-  print("As tarefas completada foram removidas")
+  print("\nAs tarefas completada foram removidas")
 
   return
 
