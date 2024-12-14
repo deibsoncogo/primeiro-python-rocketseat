@@ -14,8 +14,10 @@ def getTasks(tasks):
   return
 
 def updateNameTask(tasks, index, newName):
-  if index >= 0 and index < len(tasks):
-    tasks[index - 1]["name"] = newName
+  indexArray = index - 1
+
+  if indexArray >= 0 and indexArray < len(tasks):
+    tasks[indexArray]["name"] = newName
     print(f"\nTarefa {index} atualizada para {newName}")
   else:
     print("\nÍndice da tarefa inválida")
@@ -23,8 +25,10 @@ def updateNameTask(tasks, index, newName):
   return
 
 def completeTask(tasks, index):
-  if index >= 0 and index < len(tasks):
-    tasks[index - 1]["isCompleted"] = True
+  indexArray = index - 1
+
+  if indexArray >= 0 and indexArray < len(tasks):
+    tasks[indexArray]["isCompleted"] = True
     print(f"\nTarefa {index} completada")
   else:
     print("\nÍndice da tarefa inválida")
@@ -61,8 +65,8 @@ while True:
   elif select == "3":
     getTasks(tasks)
     index = int(input("\nDigite o número da tarefa que deseja alterar: "))
-    name = input("Digite o novo nome da tarefa: ")
-    updateNameTask(tasks, index, name)
+    newName = input("Digite o novo nome da tarefa: ")
+    updateNameTask(tasks, index, newName)
   elif select == "4":
     getTasks(tasks)
     index = int(input("\nDigite o número da tarefa que deseja completar: "))
