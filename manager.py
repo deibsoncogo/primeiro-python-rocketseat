@@ -31,6 +31,15 @@ def completeTask(tasks, index):
 
   return
 
+def deleteTaskCompleted(tasks):
+  for task in tasks:
+    if task["isCompleted"]:
+      tasks.remove(task)
+
+  print("As tarefas completada foram removidas")
+
+  return
+
 tasks = []
 
 while True:
@@ -58,6 +67,8 @@ while True:
     getTasks(tasks)
     index = int(input("\nDigite o número da tarefa que deseja completar: "))
     completeTask(tasks, index)
+  elif select == "5":
+    deleteTaskCompleted(tasks)
   elif select == "6":
     break
 
