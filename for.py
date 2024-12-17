@@ -1,7 +1,8 @@
+# o for é utilizado para criar loops
+
 people = { "name": "João", "age": 30, "city": "São Paulo" }
 list = [1, 2, 3, 4, 5]
 
-# o for é utilizado para criar loops
 for element in list:
   print(element)
 

@@ -1,3 +1,5 @@
+# o while é utilizado para criar loops
+
 count = 1
 
 while count < 50:

@@ -1,3 +1,5 @@
+# funções é utilizar para agrupara códigos e facilitar sua execução
+
 def greeting(name):
   print(f"Olá, {name}")
 

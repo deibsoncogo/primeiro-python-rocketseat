@@ -1,3 +1,5 @@
+# programa criado para gerenciar tarefas
+
 def addTask(tasks, name):
   task = { "name": name, "isCompleted": False}
   tasks.append(task)

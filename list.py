@@ -1,4 +1,5 @@
 # criando uma lista (array)
+
 myList = [5, 1, 4, 2, 1, "rocketseat", True, False]
 
 # formas de exibir a lista

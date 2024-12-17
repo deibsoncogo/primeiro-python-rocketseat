@@ -1,3 +1,5 @@
+# principais função para as variáveis de tipo string
+
 name = "Gabriel Grande"
 
 print("Codifica para bit:", name.encode())

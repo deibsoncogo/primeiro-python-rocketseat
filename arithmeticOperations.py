@@ -1,4 +1,5 @@
 # realizando operações aritméticas
+
 arithmeticOperations = 5 + 2 # soma
 print("5 + 2 =", arithmeticOperations)
 

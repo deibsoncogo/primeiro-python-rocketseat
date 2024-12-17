@@ -1,3 +1,5 @@
+# utilizando uma biblioteca/módulo externa/terceiro
+
 import requests
 
 url = "https://www.example.com"

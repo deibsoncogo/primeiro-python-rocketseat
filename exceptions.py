@@ -1,3 +1,5 @@
+# forma de tratar as mensagens de erros
+
 print("Exemplo de captura de exceções")
 
 try:

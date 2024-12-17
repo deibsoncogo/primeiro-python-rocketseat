@@ -1,3 +1,5 @@
+# criando um módulo
+
 def greeting(name):
   print(f"\nSeja bem vindo {name}")
   return

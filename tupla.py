@@ -1,4 +1,5 @@
 # um tupla é ordenada e imutável
+
 myTupla = (1, 2, 2, 3, 4)
 
 print("Terceiro elemento:", myTupla[2])

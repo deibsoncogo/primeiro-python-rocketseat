@@ -1,3 +1,5 @@
+# condicionais servem para validar e analisar os valores
+
 idade = 18
 
 if idade != 10:

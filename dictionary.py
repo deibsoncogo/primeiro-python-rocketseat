@@ -1,4 +1,5 @@
 # um dicionário não é ordenado e possui uma chave e valor
+
 people = { "name": "João", "age": 30, "city": "São Paulo" }
 
 print("Valores do dicionário pessoa:", people)
